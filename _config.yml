@@ -1,0 +1,13 @@
+# In _config.yml
+...
+defaults:
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      author: "Mr. Hyde"
+      category: "project"
+...
+¡¡¡¡baseurl: /resume_demo
