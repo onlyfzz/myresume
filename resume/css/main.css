@@ -12,7 +12,6 @@ header.siteTop-wrapper{
 }
 .visible{
 	background: rgba(0,0,0,.6) !important;
-	transition: all .3s ease-in-out;
 }
 nav{
 	font-family: "Open Sans",sans-serif;
@@ -214,9 +213,7 @@ header nav h1{
 	color: #fff;
 	font-size: 3.2rem;
 	text-transform: uppercase;
-}
-.siteHome-wrapper .hero .message .flipup{
-	border-bottom: 1px dotted #fff;
+	font-weight: 100;
 }
 .siteHome-wrapper .hero .message p{
 	color: #fff;
@@ -294,8 +291,14 @@ header nav h1{
 .siteHome-wrapper .projects article a{
 	color: #8492a4;
 }
-.siteHome-wrapper .projects article a:hover{
+.siteHome-wrapper .projects article:hover h3{
 	color: #E0CB77;
+}
+article h3.select{
+	color: #E0CB77!important;
+}
+article.dim{
+	opacity: 0.7;
 }
 @media (max-width: 867px){
 	.siteHome-wrapper .projects h2.ribbon{
@@ -496,7 +499,6 @@ header nav h1{
 	height: 60px;
 	line-height: 60px;
 	border-radius: 50%;
-	margin-right: 15px;
 	text-align: center;
 	background: red;
 }
@@ -509,6 +511,7 @@ header nav h1{
 }
 .siteHome-wrapper footer .soc .sina{
 	background: #e02a20;
+	margin: 0px 15px;
 }
 .siteHome-wrapper footer .soc .email{
 	background: #9c7c6e;
@@ -583,7 +586,7 @@ header nav h1{
   top: -35%;
   left: 50%;
   transform: translateX(-50%);
-  transition: all .1s ease-in-out;
+  transition: all .1s;
   display: none;
 }
 .sub-footer .tip:after{
@@ -717,5 +720,8 @@ header nav h1{
     font-size: 12px;
 }
 .modal-dialog .form-content .formbtn:hover{
-	opacity: .9;
+	opacity: 0.9;
+}
+body.remodal{
+	overflow: hidden;
 }
