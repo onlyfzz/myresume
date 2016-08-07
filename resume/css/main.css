@@ -285,7 +285,6 @@ header nav h1{
 	transition: all .3s ease-in-out;
 }
 .siteHome-wrapper .projects article p{
-	font-style: italic;
 	margin: 0;
 }
 .siteHome-wrapper .projects article a{
@@ -509,7 +508,7 @@ article.dim{
 .siteHome-wrapper footer .soc .github{
 	background: #4da7de;
 }
-.siteHome-wrapper footer .soc .sina{
+.siteHome-wrapper footer .soc .shu{
 	background: #e02a20;
 	margin: 0px 15px;
 }
