@@ -436,12 +436,12 @@ article.dim{
 	padding: 40px;
 }
 .siteHome-wrapper .latest .blo{
-	background: url(../images/cutebg.jpg) center/cover no-repeat;
+	background: url(../images/cute.jpg) center/cover no-repeat;
 	float: left;
 	margin-left: 0; 
 }
 .siteHome-wrapper .latest .foundry{
-	background: url(../images/cssoverlay.jpg) center/cover no-repeat;
+	background: url(../images/lazy.jpg) center/cover no-repeat;
 	float: right;
 	margin-right: 0;
 }
