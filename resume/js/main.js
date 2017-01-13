@@ -37,19 +37,19 @@
 	var $cover = $('.cover')
 	$last.on('click',function(e){
 	 $('body').addClass('remodal') /*隐藏body的其他内容*/
-	  $modalCt.show()
+	  $modalCt.show(200)
 	})
 	$close.on('click',function(e){
-	  $modalCt.hide()
+	  $modalCt.hide(200)
 	  $('body').removeClass('remodal')
 	})
 	$cover.on('click',function(){
-	  $modalCt.hide()
+	  $modalCt.hide(200)
 	  $('body').removeClass('remodal')
 	})
 	$('.hero a').on('click',function(e){
       e.preventDefault()
-	  $modalCt.show()
+	  $modalCt.show(200)
 	  $('body').addClass('remodal')	  
 	})
 	/*------projects mouseenter------*/

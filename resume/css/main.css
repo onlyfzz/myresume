@@ -222,12 +222,12 @@ header nav h1{
 	margin-top: 0.6rem;
 }
 @media (max-width: 867px){
-	.wrapper{
+	.siteHome-wrapper .wrapper{
 		padding: 20px;
 	}
 }
 @media (max-width: 867px){
-	.hero{
+	.siteHome-wrapper .hero{
 		height: 500px;
 	}
 	.siteHome-wrapper .hero .message{
@@ -255,6 +255,11 @@ header nav h1{
 @media (max-width: 867px){
 	html{
 		font-size: 90%;
+	}
+}
+@media (max-width: 500px){
+	.siteHome-wrapper .hero{
+		height: 300px;
 	}
 }
 /**====projects====**/
@@ -396,6 +401,7 @@ article.dim{
     display: inline;
     float: left;
     width: 22.91667%;
+    min-height: 336px;
     margin: 30px 1.04167%;
     text-align: center;
     padding-top: 160px;
@@ -610,8 +616,18 @@ article.dim{
   left: 0;
   right: 0;
   bottom: 0; 
-  z-index: 100000;
+  z-index: 1000;
   overflow: auto;
+}
+@keyframes fadein{
+	0% {opacity: 0;}
+	50% {opacity: .6;}
+	100% {opacity: 1;}
+}
+@keyframes fadeout{
+	0% {opacity: 1;}
+	50% {opacity: .6;}
+	100% {opacity: 0;}
 }
 .modal-dialog .cover{
   position: fixed;
@@ -624,29 +640,15 @@ article.dim{
   z-index: 100000;
   overflow: auto;
 }
-@media (min-width: 700px){
- .modal-content{
-   max-width: 800px;
-   margin: 20px auto;
- } 
-}
 @media (max-width: 867px) {
 	.ribbon{
 		padding: 8px 33px;
 	}
-	
 }
 @media (max-width: 500px) {
 	.ribbon{
 		display: none;
 	}
-	
-}
-.modal-dialog .modal-content{
-  position: relative;
-  width: 100%;
-  background: #F6F6F6;
-  z-index: 100000;
 }
 .modal-dialog .modal-content:before{
   position: absolute;
@@ -658,6 +660,22 @@ article.dim{
   height: 63px;
   z-index: 1;
 }
+.modal-dialog .modal-content{
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  background: #F6F6F6;
+  background-clip: padding-box;
+  transform: scale(0.9);
+  transition: transform .2s linear;
+  z-index: 100000;
+}
+@media (min-width: 700px){
+ .modal-dialog .modal-content{
+   max-width: 800px;
+   margin: 20px auto;
+ } 
+}
 .modal-dialog .modal-content .close{
   position: absolute;
   top: 0;
@@ -667,7 +685,6 @@ article.dim{
   border-right: 2px solid #3e5368;
   border-bottom: 2px solid #3e5368;
   cursor: pointer;
-
 }
 .modal-dialog .modal-content .close:after{
   content: "×";
@@ -684,9 +701,6 @@ article.dim{
 }
 .modal-dialog .modal-content .close:hover.close:after{
   color: #fff;
-}
-.modal-dialog .modal-content .ribbon{
-  margin-top: 0;
 }
 .modal-dialog .modal-content img{
   width: 30%;

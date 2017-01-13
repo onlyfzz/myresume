@@ -33,9 +33,9 @@ body {
     color: #475261;
     font-size: 1.3rem;
 }
-/*.clearfix {
+.clearfix {
 	*zoom: 1;
-}*/
+}
 .clearfix:after {
 	display: block;
 	content: '';
